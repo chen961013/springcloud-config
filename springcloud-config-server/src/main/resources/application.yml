@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: springcloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/ChenDestiny/springcloud-config-server.git
+          search-paths:
+            - configfiles
+      label: dev
+server:
+  port: 3344
